@@ -64,6 +64,10 @@ Make sure that you have the correct path to your bot project ARM deployment temp
 
 ### 5. Prepare your code for deployment
 
+> [!TIP]
+> This procedure uses a ZIP file to deploy your bot. In C#, this may fail if the solution configuration at build is set to Debug.
+> In Visual Studio, make sure that the solution configuration is set to Release and perform a clean rebuild of the solution before continuing.
+
 #### 5.1 Retrieve or create necessary IIS/Kudu files
 
 [!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
